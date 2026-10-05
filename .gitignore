@@ -1,0 +1,17 @@
+# dependencias
+/node_modules
+
+# next
+/.next/
+/out/
+next-env.d.ts
+
+# entorno (nunca se sube a git)
+.env
+.env*.local
+
+# varios
+.DS_Store
+*.tsbuildinfo
+npm-debug.log*
+.vercel

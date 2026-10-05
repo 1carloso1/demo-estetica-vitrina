@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* altura del navbar sticky, para que los anclas no queden tapados */
+    scroll-padding-top: 4.5rem;
+  }
+
+  body {
+    @apply bg-brand-mist font-body text-brand-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-normal tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-accentText;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
